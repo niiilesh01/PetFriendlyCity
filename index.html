@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Friendly City Campaign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pet-Friendly City 🐾</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#impact">Impact Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Making Cities Paw-some! 🐶✨</h1>
+            <p>Join our movement to create pet-friendly cities where every furry friend thrives!</p>
+            <a href="#volunteer" class="cta-button">Join the Movement 🐾</a>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section id="volunteer" class="volunteer">
+        <h2>Become a Pet-Friendly Volunteer! 🐱</h2>
+        <form class="volunteer-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="City" required>
+            <select required>
+                <option value="" disabled selected>Role Preference</option>
+                <option value="outreach">Community Outreach</option>
+                <option value="events">Event Planning</option>
+                <option value="advocacy">Pet Advocacy</option>
+            </select>
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit" class="submit-button">Sign Up 🐾</button>
+        </form>
+    </section>
+
+    <!-- Pet Adoption Carousel -->
+    <section class="adoption-carousel">
+        <h2>Meet Our Adoptable Pals! 🐕</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Buddy the playful pup">
+                <h3>Buddy</h3>
+                <p>Playful pup looking for a forever home!</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Whiskers the cuddly kitty">
+                <h3>Whiskers</h3>
+                <p>Cuddly kitty who loves naps!</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/5731878/pexels-photo-5731878.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=300&h=200" alt="Max the energetic dog">
+                <h3>Max</h3>
+                <p>Energetic dog ready for adventures!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section id="impact" class="impact-stories">
+        <h2>Impact Stories 🐾</h2>
+        <div class="stories-grid">
+            <div class="story-card">
+                <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Bella with her new family">
+                <h3>Saving Bella</h3>
+                <p>Volunteers helped Bella find a loving home!</p>
+            </div>
+            <div class="story-card">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Pet-friendly park with dogs">
+                <h3>Park for Paws</h3>
+                <p>Our campaign built a pet-friendly park!</p>
+            </div>
+            <div class="story-card">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Community pet adoption event">
+                <h3>Community Love</h3>
+                <p>100+ pets adopted in one event!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet-Friendly City Campaign. All Rights Reserved. 🐾</p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

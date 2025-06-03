@@ -1,0 +1,77 @@
+    <!-- Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pet-Friendly City Campaign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pet-Friendly City 🐾</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="index.html#volunteer">Volunteer</a></li>
+            <li><a href="index.html#impact">Impact Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about-hero" class="hero">
+        <div class="hero-content">
+            <h1>About Our Paw-some Mission! 🐶🐱</h1>
+            <p>Creating cities where every pet thrives with love, care, and community support.</p>
+            <a href="index.html#volunteer" class="cta-button">Get Involved 🐾</a>
+        </div>
+    </section>
+
+    <!-- Our Goals Section -->
+    <section class="goals">
+        <h2>Our Goals 🐕</h2>
+        <div class="goals-grid">
+            <div class="goal-card">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=300&h=200" alt="Pet-friendly spaces">
+                <h3>More Pet-Friendly Spaces</h3>
+                <p>Advocating for parks, cafes, and public areas that welcome pets with open paws!</p>
+            </div>
+            <div class="goal-card">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Pet adoptions">
+                <h3>Increase Pet Adoptions</h3>
+                <p>Connecting adorable pets with loving forever homes through community events.</p>
+            </div>
+            <div class="goal-card">
+                <img src="https://images.pexels.com/photos/5731878/pexels-photo-5731878.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=300&h=200" alt="Community education">
+                <h3>Community Education</h3>
+                <p>Spreading awareness about responsible pet ownership and care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Community Section -->
+    <section class="community">
+        <h2>Our Pet-Loving Community 🐾</h2>
+        <p>We’re a team of passionate volunteers, pet lovers, and advocates working together to make cities more welcoming for our furry friends. Join us to make a difference!</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet-Friendly City Campaign. All Rights Reserved. 🐾</p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

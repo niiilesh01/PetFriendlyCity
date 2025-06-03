@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pet-Friendly City Campaign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Pet-Friendly City 🐾</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#volunteer">Volunteer</a></li>
+            <li><a href="index.html#impact">Impact Stories</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="contact-hero" class="hero">
+        <div class="hero-content">
+            <h1>Get in Touch! 🐶🐱</h1>
+            <p>Have questions or want to join our paw-some mission? Reach out to us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <h2>Contact Us 🐾</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send Message 🐾</button>
+        </form>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <h2>Connect With Us 🐕</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Email</h3>
+                <p><a href="mailto:info@petfriendlycity.org">contact@collegetips.in</a></p>
+            </div>
+            <div class="info-card">
+                <h3>Social Media</h3>
+                <p>Follow us on <a href="#">Twitter</a>, <a href="#">Instagram</a>, and <a href="#">Facebook</a>!</p>
+            </div>
+            <div class="info-card">
+                <h3>Visit Us</h3>
+                <p>Join our events or visit our pet-friendly parks across the city!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet-Friendly City Campaign. All Rights Reserved. 🐾</p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
